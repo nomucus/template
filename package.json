@@ -1,0 +1,41 @@
+{
+  "name": "template",
+  "author": "foureal",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@sapphire/eslint-config": "^4.3.1",
+    "@sapphire/prettier-config": "^1.4.0",
+    "@sapphire/ts-config": "^3.3.2",
+    "@types/eslint": "^8",
+    "@types/prettier": "^2",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts --fix",
+    "format": "prettier --write src",
+    "build": "tsc -b src",
+    "clean": "tsc -b src --clean"
+  },
+  "prettier": "@sapphire/prettier-config",
+  "eslintConfig": {
+    "extends": "@sapphire"
+  },
+  "engines": {
+    "node": ">=v16.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foureal/template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/foureal/template/issues"
+  },
+  "packageManager": "yarn@3.2.0"
+}
